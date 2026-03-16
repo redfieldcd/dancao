@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dan Cao - About Me</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #0a0a0a;
+            color: #ffffff;
+            line-height: 1.8;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 2rem 4rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+            background: rgba(10, 10, 10, 0.9);
+            backdrop-filter: blur(10px);
+        }
+
+        .logo {
+            font-size: 0.875rem;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 3rem;
+        }
+
+        .nav-links a {
+            color: rgba(255, 255, 255, 0.6);
+            text-decoration: none;
+            font-size: 0.75rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #ffffff;
+        }
+
+        .blog-post {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 10rem 2rem 6rem;
+        }
+
+        .blog-post-title {
+            font-size: 2rem;
+            font-weight: 300;
+            margin-bottom: 1rem;
+            line-height: 1.3;
+        }
+
+        .blog-post-date {
+            font-size: 0.75rem;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.4);
+            margin-bottom: 3rem;
+        }
+
+        .blog-post-content p {
+            font-size: 1rem;
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 1.5rem;
+            font-weight: 300;
+        }
+
+        .blog-post-content .chinese {
+            font-style: italic;
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        .blog-post-content .closing {
+            margin-top: 3rem;
+            color: rgba(255, 255, 255, 0.9);
+            font-weight: 400;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 4rem;
+            color: rgba(255, 255, 255, 0.4);
+            text-decoration: none;
+            font-size: 0.75rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            transition: color 0.3s ease;
+        }
+
+        .back-link:hover {
+            color: #ffffff;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: rgba(255, 255, 255, 0.3);
+            font-size: 0.75rem;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                padding: 1.5rem 2rem;
+            }
+
+            .nav-links {
+                gap: 1.5rem;
+            }
+
+            .blog-post {
+                padding: 8rem 1.5rem 4rem;
+            }
+
+            .blog-post-title {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="../index.html" class="logo">Dan Cao</a>
+        <div class="nav-links">
+            <a href="../about.html#about">About</a>
+            <a href="../about.html#work">Work</a>
+            <a href="../about.html#contact">Contact</a>
+        </div>
+    </nav>
+
+    <article class="blog-post">
+        <h1 class="blog-post-title">About Me</h1>
+        <p class="blog-post-date">February 2025</p>
+
+        <div class="blog-post-content">
+            <p>Hi, thanks for visiting my website.</p>
+
+            <p>I was born and grew up in Hangzhou, China. My favorite thing during my childhood and teenage years was reading. I started going to the library by myself around age 10 and could stay there the whole day. My parents were busy with their own lives, so I had plenty of time to wander and explore.</p>
+
+            <p>I was born in the early '90s in a great city, so throughout my childhood and teenage years, everything around me was on an upward trajectory &mdash; including my beloved libraries.</p>
+
+            <p>I became a big fan of science in middle school. My chemistry teacher trusted me so much that he gave me the key to all the chemistry labs. It probably sounds terrifying nowadays &mdash; a teacher would surely be fired for doing that today.</p>
+
+            <p>In high school, I fell in love with astronomy. My school was actually well-known for its astronomy club. Those three years were full of adventure: traveling across 10+ provinces in China, meeting a ton of fascinating people ranging from 14 to 80 years old, joining China's national team for the International Astronomy Olympiad, and competing in South Korea and Ukraine. Some of the people I met during those years I would later run into in Silicon Valley.</p>
+
+            <p>I chose physics as my major in college. My hero at the time was Richard Feynman. I didn't find many fellow physics enthusiasts in college, though &mdash; computer science was gaining popularity, and I eventually pivoted to become a software engineer after graduation.</p>
+
+
+            <p>Working in tech has been a great journey. I'm still processing how those years contributed to my growth. AI is extraordinarily powerful and will undoubtedly be a milestone in human history. As AI becomes capable of doing more and more &mdash; including coding &mdash; I truly believe the traditional definition of "software engineer" will change soon.</p>
+
+            <p>I'm giving myself a pause &mdash; a gap year &mdash; to step outside the system I've grown familiar with and make more time for self-exploration. I call it <span class="chinese">&#30041;&#30333; (Li&uacute; B&aacute;i)</span>, the Art of Omission.</p>
+
+            <p>I've also come to realize that life is short. It's meaningless unless you give it meaning and purpose.</p>
+            <p><em>&ldquo;This is the best time to be alive, and almost everything you think you know is wrong.&rdquo;</em></p>
+
+            <p class="closing">Thanks for reading. Nice to meet you.</p>
+        </div>
+
+        <a href="../about.html" class="back-link">&larr; Back</a>
+    </article>
+
+    <footer>
+        &copy; 2026 Dan Cao
+    </footer>
+</body>
+</html>
