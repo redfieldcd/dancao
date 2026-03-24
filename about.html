@@ -300,6 +300,92 @@
             text-transform: uppercase;
         }
 
+        /* Blogs Section */
+        #blogs {
+            min-height: auto;
+            display: block;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        #blogs .section-title {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        #blogs .section-title::after {
+            content: '';
+            display: block;
+            width: 2rem;
+            height: 1px;
+            background: rgba(255, 255, 255, 0.2);
+            margin: 0.75rem auto 0;
+        }
+
+        .blogs-grid {
+            max-width: 680px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .blog-card {
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            transition: border-color 0.3s ease;
+        }
+
+        .blog-card:hover {
+            border-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .blog-card h3 {
+            font-size: 1.25rem;
+            font-weight: 400;
+            margin-bottom: 0.75rem;
+        }
+
+        .blog-card h3 a {
+            color: #ffffff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .blog-card h3 a:hover {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .blog-card p {
+            font-size: 0.95rem;
+            color: rgba(255, 255, 255, 0.6);
+            font-weight: 300;
+            line-height: 1.7;
+        }
+
+        .blog-card .blog-date {
+            font-size: 0.7rem;
+            color: rgba(255, 255, 255, 0.35);
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+        }
+
+        .blog-card .blog-link {
+            display: inline-block;
+            margin-top: 1rem;
+            font-size: 0.75rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.5);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .blog-card .blog-link:hover {
+            color: #ffffff;
+        }
+
         /* Contact Section */
         #contact {
             display: flex;
@@ -382,6 +468,7 @@
             <a href="#about">About</a>
             <a href="#story">Story</a>
             <a href="#projects">Projects</a>
+            <a href="#blogs">Blogs</a>
             <a href="#contact">Contact</a>
         </div>
     </nav>
@@ -467,6 +554,24 @@
                 <h3><a href="https://apps.apple.com/app/id6759990770" target="_blank">Perform!</a> <span class="project-tag">Kids Game</span> <span class="project-tag">Family Game</span></h3>
                 <p>A fun party card game for families and friends to play together in person. 100 cards across five categories for game nights and road trips.</p>
                 <a href="https://apps.apple.com/app/id6759990770" target="_blank" class="project-link">App Store &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="blogs">
+        <p class="section-title">Blogs</p>
+        <div class="blogs-grid">
+            <div class="blog-card">
+                <p class="blog-date">March 23, 2026</p>
+                <h3><a href="https://substack.com/@dcao00/note/p-191896287" target="_blank">A Random Thought: When Setting Up Claude Channel</a></h3>
+                <p>Reflections on AI agents, automation, and the importance of maintaining human agency in writing.</p>
+                <a href="https://substack.com/@dcao00/note/p-191896287" target="_blank" class="blog-link">Read more &rarr;</a>
+            </div>
+            <div class="blog-card">
+                <p class="blog-date">March 2026</p>
+                <h3><a href="blog/about-me.html">About Me</a></h3>
+                <p>A deeper look into who I am, where I come from, and what drives me.</p>
+                <a href="blog/about-me.html" class="blog-link">Read more &rarr;</a>
             </div>
         </div>
     </section>
